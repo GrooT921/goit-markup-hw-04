@@ -149,6 +149,21 @@ a {
   display: flex;
 }
 
+/* Оформление контактов */
+
+.icon-envelope{
+  fill: currentColor;
+  width: 16px; 
+  height: 12px;
+}
+
+.icon-smartphone{
+  fill: currentColor;
+  width: 10px;
+  height: 16px;
+}
+
+
 .nav-link {
   display: block;
   padding: 32px 0;
@@ -331,33 +346,6 @@ a {
   margin-right: 30px;
 }
 
-.list-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--color-section-team);
-}
-
-.list-item:nth-child(1)::before {
-  background-image: url(../img/antenna.svg);
-}
-
-.list-item:nth-child(2)::before {
-  background-image: url(../img/clock.svg);
-}
-
-.list-item:nth-child(3)::before {
-  background-image: url(../img/diagram.svg);
-}
-
-.list-item:nth-child(4)::before {
-  background-image: url(../img/astronaut.svg);
-}
-
 .list-item:last-child {
   margin-right: 0;
 }
@@ -384,6 +372,23 @@ a {
 
   font-size: 14px;
   line-height: 1.7;
+}
+
+/* Оформление осбенности */
+
+.icon{
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 25px 0;
+  border-radius: 4px;
+
+  background: var(--color-section-team);
+}
+
+.icon-visualy{
+  width: 70px;
+  height: 70px;
 }
 
 /* Чем мы занимаемся */
@@ -462,6 +467,31 @@ a {
   line-height: 1.18;
   text-align: center;
 }
+
+/* Соцсети */
+
+.list-network{
+  display:flex;
+  padding-left: 32px;
+  padding-top: 16px;
+}
+
+.flex-network:nth-last-child(1){
+  margin-right: 0;
+}
+
+.flex-network {
+  margin-right: 10px;
+  border-radius: 50%;
+
+}
+
+.network{
+  width: 44px;
+  height: 44px;
+}
+
+
 
 /* Footer */
 
