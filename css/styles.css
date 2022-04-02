@@ -470,27 +470,94 @@ a {
 
 /* Соцсети */
 
-.list-network{
-  display:flex;
-  padding-left: 32px;
-  padding-top: 16px;
+.network{
+  fill: #AFB1B8;
 }
 
-.flex-network:nth-last-child(1){
+.network:hover {
+  fill: #ffffff;
+}
+
+.network-link:hover,
+.network-link:focus {
+  background-color: var(--accent-color-text);
+}
+
+.action{
+  justify-content: center;
+  display: flex;
+  padding: 0;
+  margin-top: 16px;
+}
+
+.network-link{
+display: flex;
+justify-content: center;
+align-items:center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+}
+
+.image-link{
+margin-right: 10px;
+}
+
+.image-link:last-child(4){
   margin-right: 0;
 }
 
-.flex-network {
-  margin-right: 10px;
-  border-radius: 50%;
+/* Постоянные клиенты */
 
+.clients{
+ padding-right: 30px;
 }
 
-.network{
-  width: 44px;
-  height: 44px;
+.clients:last-child{
+  padding-right: 0;
 }
 
+.regular-clients{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+
+.action-clients{
+  justify-content: center;
+  align-items:center;
+  display: flex;
+}
+
+.link-clients{
+  justify-content: center;
+  align-items:center;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.clients-logo {
+  fill: #AFB1B8;
+}
+
+.clients-logo:hover{
+  fill: #2196f3;
+}
+
+ .link-clients:hover, .clients-logo:hover{
+  border-color:var(--accent-color-text);
+}
+
+
+/* Соцсети футер */
 
 
 /* Footer */
