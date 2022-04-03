@@ -14,6 +14,7 @@ html {
   --button-color-text: #ffffff;
   --color-section-team: #f5f4fa;
   --color-flex-element: #eeeeee;
+  --color-svg-element:#AFB1B8;
 }
 
 body {
@@ -55,6 +56,14 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Логотип */
@@ -221,14 +230,6 @@ a {
 
 /* Кнопки портфолио */
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .filter-button {
   padding: 6px 22px;
   border-radius: 4px;
@@ -273,6 +274,12 @@ a {
 
   background-color: var(--button-color-text);
   box-sizing: border-box;
+}
+
+.flex-element:hover, .flex-element:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .flex-element:nth-child(3n) {
@@ -468,19 +475,20 @@ a {
   text-align: center;
 }
 
-/* Соцсети */
+/* Соцсети команды */
 
 .network{
-  fill: #AFB1B8;
-}
-
-.network:hover {
-  fill: #ffffff;
+  fill: var(--color-svg-element);
 }
 
 .network-link:hover,
-.network-link:focus {
+.network-link:focus{
   background-color: var(--accent-color-text);
+}
+
+.network-link:hover .network,
+.network-link:focus .network {
+  fill: var(--button-color-text);
 }
 
 .action{
@@ -545,22 +553,76 @@ margin-right: 10px;
 }
 
 .clients-logo {
-  fill: #AFB1B8;
-}
-
-.clients-logo:hover{
-  fill: #2196f3;
+  fill: var(--color-svg-element);
 }
 
  .link-clients:hover, .clients-logo:hover{
   border-color:var(--accent-color-text);
 }
 
+.link-clients:hover .clients-logo,
+.clients-logo:hover .clients-logo{
+  fill: var(--accent-color-text);
+}
+
 
 /* Соцсети футер */
 
+.footer-join{
+  margin-left: 70px;
+  display: flex;
+  flex-direction:column;
+}
+
+.join{
+  width: 145px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-top: 12px;
+  margin-bottom: 20px;
+  color: var(--button-color-text);
+}
+
+.footer-network{
+  display: flex;
+}
+
+.item-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.item-link:hover, .item-link:focus{
+  background-color: var(--accent-color-text);
+}
+
+.svg-footer{
+  fill: var(--button-color-text);
+}
+
+.item-footer {
+  margin-right: 10px;
+}
+
+.item-footer:last-child(4) {
+  margin-right: 0;
+}
 
 /* Footer */
+
+.footer-flex{
+  display: flex;
+}
 
 .footer {
   padding: 60px 0;
